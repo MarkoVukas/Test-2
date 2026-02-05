@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,70 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtUpit = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.lstStavke = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(46, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Naziv ili kategorija:";
+            // 
+            // txtUpit
+            // 
+            this.txtUpit.Location = new System.Drawing.Point(162, 42);
+            this.txtUpit.Name = "txtUpit";
+            this.txtUpit.Size = new System.Drawing.Size(100, 20);
+            this.txtUpit.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(117, 77);
+            this.button1.Location = new System.Drawing.Point(328, 42);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Unos stavke";
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Pretraži";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(277, 77);
+            this.button2.Location = new System.Drawing.Point(454, 42);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Prikaz računa";
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Osvježi";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // lstStavke
             // 
-            this.button3.Location = new System.Drawing.Point(99, 171);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Statistika po kategoriji";
-            this.button3.UseVisualStyleBackColor = true;
+            this.lstStavke.FormattingEnabled = true;
+            this.lstStavke.Location = new System.Drawing.Point(107, 107);
+            this.lstStavke.Name = "lstStavke";
+            this.lstStavke.Size = new System.Drawing.Size(167, 95);
+            this.lstStavke.TabIndex = 4;
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(276, 169);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(76, 25);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Izlaz";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.lstStavke);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Mini blagajna";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Controls.Add(this.txtUpit);
+            this.Controls.Add(this.label1);
+            this.Name = "Form3";
+            this.Text = "Prikaz računa";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtUpit;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ListBox lstStavke;
     }
 }
-
